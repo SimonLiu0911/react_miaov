@@ -12,7 +12,7 @@ function work(state={
 			return {
 				loading: false,
 				data: action.data
-			};        
+			};
 	};
 	return state
 }

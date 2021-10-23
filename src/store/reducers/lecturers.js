@@ -1,11 +1,13 @@
-export default function lecturers(state={
-    data: []
+function lecturers(state={
+	data: []
 },action){
-    switch(action.type){
-        case "LOAD_LECTURERS":
-            return {
-                data: action.data
-            };       
-    };
-    return state
+	switch(action.type){
+		case "LOAD_LECTURERS":
+			return {
+				data: action.data
+			};       
+	};
+	return state
 }
+
+export default lecturers;
