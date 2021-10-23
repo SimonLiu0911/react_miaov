@@ -1,4 +1,4 @@
-export default function works(state={
+function works(state={
 	data: [],
 	loading: false,
 	loadEnd: false,
@@ -25,3 +25,5 @@ export default function works(state={
 	};
 	return state
 }
+
+export default works;

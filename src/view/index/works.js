@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function Works(props){
 	let {data, loadEnd, loading} = props;
+
 	return (
 		<div className="works">
 			<h3>學員作品</h3>
