@@ -3,9 +3,10 @@ function getUser(state="", action) {
 		case "LOGIN":
 			return action.user;
 		case "LOGOUT":
-			return "";        
+			return "";
+		default:
+			return state;
 	};
-	return state
 }
 
 export default  getUser;

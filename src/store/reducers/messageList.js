@@ -33,7 +33,8 @@ export default function messageList(state={
 				loading: false,
 				loadEnd: false,
 				page: 1 
-			}             
+			}
+		default:
+			return state;
 	};
-	return state
 }

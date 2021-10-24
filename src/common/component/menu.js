@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import { nav } from "../../router/route_list";
 
-function Menu(props){
+function Menu(props) {
 	return (
 		<nav id="menu">
 			{nav.map((item,index) => {

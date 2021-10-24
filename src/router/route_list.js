@@ -14,28 +14,32 @@ const routeList = [
 		render(props){
 			return <Index {...props}/>
 		}
-	},{
+	},
+	{
 		name: "課程安排",
 		path: "/course",
 		exact: true,
 		render(props){
 			return <Course {...props} />
 		}
-	},{
+	},
+	{
 		name: "講師團隊",
 		path: "/lecturer",
 		exact: true,
 		render(props){
 			return <Lecturer {...props} />
 		}
-	},{
+	},
+	{
 		name: "作品詳情",
 		path: "/work/:id",
 		exact: true,
 		render(props){
 			return <Work {...props} />
 		}
-	},{
+	},
+	{
 		name: "登錄註冊",
 		path: "/login",
 		exact: true,
@@ -65,6 +69,6 @@ const nav = [
 ];
 
 export {
-    routeList,
-    nav
+	routeList,
+	nav
 };

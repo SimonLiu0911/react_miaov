@@ -16,14 +16,15 @@ function works(state={
 				loading: false,
 				page: ++state.page,
 				data: state.data.concat(action.data)
-			};   
+			};
 		case "LOADEND":
 			return {
 				...state,
 				loadEnd: true
-			}         
+			}
+		default:
+			return state;
 	};
-	return state
 }
 
 export default works;

@@ -58,7 +58,8 @@ function Header(props) {
 					<a
 						className="header-btn-left iconfont icon-back"
 						href="/#"
-						onClick={() => {
+						onClick={(e) => {
+                            e.preventDefault();
 							back();
 						}}  
 					></a>
@@ -66,8 +67,9 @@ function Header(props) {
 					<a 
 						className="header-btn-left iconfont icon-hycaidan"
 						href="/#"
-						onClick={() => {
-							changeShow()
+						onClick={(e) => {
+                            e.preventDefault();
+							changeShow();
 						}}
 					></a>
 				}
@@ -76,7 +78,8 @@ function Header(props) {
 			{getUser()}
 		</header>
 	);
-} 
+}
+
 export default connect(state => {
 	return {
 		user: state.getUser

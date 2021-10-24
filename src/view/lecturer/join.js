@@ -1,8 +1,8 @@
-import React,{useRef,useEffect} from 'react';
-export default function Join(){
+import React,{ useRef, useEffect } from 'react';
+function Join(){
     const list = useRef(null);
+    
     useEffect(() => {
-        //console.log(list.current);
         let lis = list.current.querySelectorAll("li");
         lis.forEach(item => {
             item.addEventListener("touchstart",() => {
@@ -15,35 +15,34 @@ export default function Join(){
     })
     return (
         <div className="teacher_index">
-            <h2>加入我们</h2>
+            <h2>加入我們</h2>
             <ul className="teacher_list clearfix" ref={list}>
                 <li>  
                     <div className="message_li">
-                        <h3>web讲师</h3>
-                        <p>人数：人数不限，多多益善</p>
-                        <p>薪资：面议</p>
+                        <h3>web講師</h3>
+                        <p>人數：人數不限，多多益善</p>
+                        <p>薪資：面議</p>
                     </div>
                 </li>     
                 <li>
                     <div className="message_li">
-                        <h3>课程顾问</h3>
-                        <p>人数：3人</p>
-                        <p>薪资：底薪+提成</p>
+                        <h3>課程顧問</h3>
+                        <p>人數：3人</p>
+                        <p>薪資：底薪+提成</p>
                     </div>
                 </li>
                 <li>
                     <div className="message_li">
                         <h3>客服</h3>
-                        <p>人数：3人</p>
-                        <p>薪资：面议</p>
+                        <p>人數：3人</p>
+                        <p>薪資：面議</p>
                     </div>
                 </li>
                 <li>
                     <div className="message_li">
                         <h3>行政前台助理</h3>
-                        <p>人数：3人</p>
-                        <p>
-                        薪资：底薪+提成</p>
+                        <p>人數：3人</p>
+                        <p>薪資：底薪+提成</p>
                     </div>
                 </li>
             </ul>
@@ -51,10 +50,12 @@ export default function Join(){
                 <div className="welcome_photo">
                     <img src={require("../../common/images/xiaole.png")} alt="" />  
                 </div>
-                <p>欢迎大家来到妙味课堂，在这里，公司文化轻松包容，且呈多元化发展倾向，职位晋级标准清晰量化，虽有上下级职称、却无论资排辈陋习……
-                    <span>本招聘信息长期有效</span>
+                <p>歡迎大家來到妙味課堂，在這裡，公司文化輕鬆包容，且呈多元化發展傾向，職位晉級標準清晰量化，雖有上下級職稱、卻無論資排輩陋習……
+                    <span>本招聘信息長期有效</span>
                 </p>
             </div>
         </div>
     )
 }
+
+export default Join;
